@@ -1,8 +1,15 @@
-
-Despite my best efforts, I was not able to complete everything 100% yet. All the models, evaluations, and etc are done but I need to do some cleaning here and there for things to be reproducible. I will do this ASAP
-
 # in5550-exam
-Repository for the home exam
+Repository for the home exam. This covers the Negation Scope Resolution track.
+
+I have used notebooks for conducting the experiments:
+
+1. Data Inspection - Getting familiar with the data format. 
+2. Data Processing - Using Apache Beam for pre-processing the data into the desired format
+3. BiLSTM - Baseline model
+4. BiLSTM-CE - Extended model using BERT as word embeddings
+5. Error Inspection - Inspecting and evaluating performance
+
+Most of the code has been implemented in a Python module, NSR. 
 
 # NSR
 
