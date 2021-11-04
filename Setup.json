@@ -1,0 +1,37 @@
+{
+    "identifier": "BiLSTM-C",
+    "ID": "Baseline",
+    "randomseed": 2020,
+    "resultsdir": "Saves/",
+    "params": {
+        "vocab_size": null,
+        "min_freq": 1,
+        "vectors": null,
+        "train_emb": true,
+        "batchsize": 1,
+        "epochs": 50,
+        "savemod": true
+    },
+    "model": {
+        "type": "BiLSTMC",
+        "args": {
+            "n_neurons": 200,
+            "n_layers": 2,
+            "embedding_dim": 50
+        }
+    },
+    "optimizer": {
+        "type": "Adam",
+        "args": {
+            "lr": 1e-4
+        }
+    },
+    "criterion": {
+        "type": "CrossEntropyLoss",
+        "args": {}
+    },
+    "runner": {
+        "type": "MultiClassRunner",
+        "args": {}
+    }
+}
